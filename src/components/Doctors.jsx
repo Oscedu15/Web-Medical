@@ -100,15 +100,15 @@ const Doctors = () => {
       </div>
       <div className="mt-5">
         <Slider ref={slider} {...settings}>
-          {data.map((e, index) => (
+          {data.map((item, index) => (
             <div key={index} className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer">
               <div>
-                <img src={e.img} alt="img" className="h-56 rounded-t-xl w-full" />
+                <img src={item.img} alt="img" className="h-56 rounded-t-xl w-full" />
               </div>
 
               <div className="flex flex-col justify-center items-center">
-                <h1 className="font-semibold text-xl pt-4">{e.name}</h1>
-                <h3 className="pt-2">{e.specialties}</h3>
+                <h1 className="font-semibold text-xl pt-4">{item.name}</h1>
+                <h3 className="pt-2">{item.specialties}</h3>
               </div>
             </div>
           ))}
