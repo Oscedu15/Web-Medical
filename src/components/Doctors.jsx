@@ -106,7 +106,7 @@ const Doctors = () => {
           {data.map((item, index) => (
             <div key={index} className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer">
               <div>
-                <img src={item.img} alt="img" className="h-56 rounded-t-xl w-full" />
+                <img src={Img1} alt="img" className="h-56 rounded-t-xl w-full" />
               </div>
 
               <div className="flex flex-col justify-center items-center">
