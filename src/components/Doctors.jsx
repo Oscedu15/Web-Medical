@@ -9,32 +9,32 @@ const Doctors = () => {
 
   const data = [
     {
-      img: "../src/assets/img/doc1.png",
+      img: "/src/assets/img/doc1.png",
       name: "Dr. Serena Mitchell",
       specialties: "Orthopedic Surgeon",
     },
     {
-      img: "../src/assets/img/doc2.png",
+      img: "/src/assets/img/doc2.png",
       name: "Dr. Julian Bennett",
       specialties: "Cardiologist",
     },
     {
-      img: "../src/assets/img/doc3.png",
+      img: "/src/assets/img/doc3.png",
       name: "Dr. Camila Rodriguez",
       specialties: "Pediatrician",
     },
     {
-      img: "../src/assets/img/doc4.png",
+      img: "/src/assets/img/doc4.png",
       name: "Dr. Victor Nguyen",
       specialties: "Neurologist",
     },
     {
-      img: "../src/assets/img/doc5.png",
+      img: "/src/assets/img/doc5.png",
       name: "Dr. Ethan Carter",
       specialties: "Dermatologist",
     },
     {
-      img: "../src/assets/img/doc6.png",
+      img: "/src/assets/img/doc6.png",
       name: "Dr. Olivia Martinez",
       specialties: "Ophthalmologist",
     },
