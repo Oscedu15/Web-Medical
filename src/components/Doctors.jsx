@@ -4,22 +4,25 @@ import Slider from "react-slick";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
+import Img1 from "../assets/img/doc1.png"
+import Img2 from "../assets/img/doc2.png"
+import Img3 from "../assets/img/doc3.png"
 
 const Doctors = () => {
 
   const data = [
     {
-      img: "/src/assets/img/doc1.png",
+      img: {Img1},
       name: "Dr. Serena Mitchell",
       specialties: "Orthopedic Surgeon",
     },
     {
-      img: "/src/assets/img/doc2.png",
+      img: {Img2},
       name: "Dr. Julian Bennett",
       specialties: "Cardiologist",
     },
     {
-      img: "/src/assets/img/doc3.png",
+      img: {Img3},
       name: "Dr. Camila Rodriguez",
       specialties: "Pediatrician",
     },
