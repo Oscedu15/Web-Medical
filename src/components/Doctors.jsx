@@ -7,37 +7,40 @@ import { useRef } from "react";
 import Img1 from "../assets/img/doc1.png"
 import Img2 from "../assets/img/doc2.png"
 import Img3 from "../assets/img/doc3.png"
+import Img4 from "../assets/img/doc4.png"
+import Img5 from "../assets/img/doc5.png"
+import Img6 from "../assets/img/doc6.png"
 
 const Doctors = () => {
 
   const data = [
     {
-      img: {Img1},
+      img: Img1,
       name: "Dr. Serena Mitchell",
       specialties: "Orthopedic Surgeon",
     },
     {
-      img: {Img2},
+      img: Img2,
       name: "Dr. Julian Bennett",
       specialties: "Cardiologist",
     },
     {
-      img: {Img3},
+      img: Img3,
       name: "Dr. Camila Rodriguez",
       specialties: "Pediatrician",
     },
     {
-      img: "/src/assets/img/doc4.png",
+      img: Img4,
       name: "Dr. Victor Nguyen",
       specialties: "Neurologist",
     },
     {
-      img: "/src/assets/img/doc5.png",
+      img: Img5,
       name: "Dr. Ethan Carter",
       specialties: "Dermatologist",
     },
     {
-      img: "/src/assets/img/doc6.png",
+      img: Img6,
       name: "Dr. Olivia Martinez",
       specialties: "Ophthalmologist",
     },
@@ -103,15 +106,15 @@ const Doctors = () => {
       </div>
       <div className="mt-5">
         <Slider ref={slider} {...settings}>
-          {data.map((item, index) => (
+          {data?.map(({name, specialties, img, index}) => (
             <div key={index} className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer">
               <div>
-                <img src={Img1} alt="img" className="h-56 rounded-t-xl w-full" />
+                <img src={img} alt="img" className="h-56 rounded-t-xl w-full" />
               </div>
 
               <div className="flex flex-col justify-center items-center">
-                <h1 className="font-semibold text-xl pt-4">{item.name}</h1>
-                <h3 className="pt-2">{item.specialties}</h3>
+                <h1 className="font-semibold text-xl pt-4">{name}</h1>
+                <h3 className="pt-2">{specialties}</h3>
               </div>
             </div>
           ))}
